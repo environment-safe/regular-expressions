@@ -1,6 +1,6 @@
 @environment-safe/regular-expressions
 =====================================
-A regular expression parsing and generation toolkit ported from [ret](https://github.com/fent/ret.js), [drange](https://github.com/fent/node-drange) and [randexp](https://github.com/fent/randexp.js/blob/master/lib/randexp.js) (All by [fent](https://github.com/fent)) as well integrating [seedrandom](https://github.com/davidbau/seedrandom) by [davidbau](https://github.com/davidbau) and a type based wrapper so that they aren't written in meta languages or require a build pipeline and can be generated from seed values to generate deterministic output.
+A regular expression parsing and generation toolkit ported from [ret](https://github.com/fent/ret.js), [drange](https://github.com/fent/node-drange) and [randexp](https://github.com/fent/randexp.js/blob/master/lib/randexp.js) (All by [fent](https://github.com/fent)) as well integrating seeds so that they aren't written in meta languages or require a build pipeline and can be generated from seed values to generate deterministic output.
 
 This library is in a rough, but usable state as it is needed for another primary project. Polish will come later.
 

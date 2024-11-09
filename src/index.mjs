@@ -1,6 +1,6 @@
 import { tokenizer, types } from './ret.mjs';
 import { DRange } from './drange.mjs';
-import { Random } from './random.mjs';
+import { Random } from '@environment-safe/random';
 export { tokenizer, types, Random };
 const ret = tokenizer;
 

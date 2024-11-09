@@ -15,13 +15,13 @@ describe('@environment-safe/regular-expressions', ()=>{
     
     describe('Random', ()=>{
         it('generates a deterministic sequence from a static seed', async ()=>{
-            const generator = new Random();
+            const generator = new Random({seed: 'some-static-seed'});
             const a = generator.random();
             const b = generator.random();
             const c = generator.random();
-            a.should.equal(0.23144008215179881);
-            b.should.equal(0.27404636548159655);
-            c.should.equal(0.7901279251811976);
+            a.should.equal(0.20134689138529305);
+            b.should.equal(0.12315293976541405);
+            c.should.equal(0.7383048833857655);
         });
     });
     
@@ -78,9 +78,9 @@ describe('@environment-safe/regular-expressions', ()=>{
             const generatedA = generator.generate();
             const generatedB = generator.generate();
             const generatedC = generator.generate();
-            generatedA.should.equal('foo');
+            generatedA.should.equal('baz');
             generatedB.should.equal('foo');
-            generatedC.should.equal('baz');
+            generatedC.should.equal('bar');
         });
     });
 });
